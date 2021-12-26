@@ -1,1 +1,1 @@
-todolist project to get familiar with react again
+Shopping cart project to get familiar with react again.
