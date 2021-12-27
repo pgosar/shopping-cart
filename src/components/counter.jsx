@@ -4,6 +4,7 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
+        {/*increment and delete buttons*/}
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
           onClick={() => this.props.onIncrement(this.props.counter)}
@@ -21,6 +22,7 @@ class Counter extends React.Component {
     );
   }
 
+  //if value is 0 change color accordingly
   getBadgeClasses() {
     let classes = "badge m-2 bg-";
     classes += this.props.counter.value == 0 ? "warning" : "primary";

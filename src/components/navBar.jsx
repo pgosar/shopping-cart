@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-class NavBar extends React.Component {
-  render() {
-    return (
-      <nav className="navbar navbar light bg-light">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
-      </nav>
-    );
-  }
-}
+
+//navigation bar
+const NavBar = ({ totalCounters }) => {
+  return (
+    <nav className="navbar navbar light bg-light">
+      <a className="navbar-brand" href="#">
+        Navbar{" "}
+        <span className="badge bg-pill bg-secondary">{totalCounters}</span>
+      </a>
+    </nav>
+  );
+};
 
 export default NavBar;
